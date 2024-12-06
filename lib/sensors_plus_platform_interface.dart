@@ -116,6 +116,6 @@ abstract class SensorsPlatform extends PlatformInterface {
   Stream<GrotationvecEvent> grotationvecEventStream({
     Duration samplingPeriod = SensorInterval.normalInterval,
   }) {
-    throw UnimplementedError('barometerEvents has not been implemented.');
+    throw UnimplementedError('GrotationvecEvents has not been implemented.');
   }
 }
