@@ -40,5 +40,5 @@ class GrotationvecEvent {
 
   @override
   String toString() =>
-      '[AccelerometerEvent (x: $x, y: $y, z: $z, timestamp: $timestamp)]';
+      '[GrotationvecEvent (x: $x, y: $y, z: $z, timestamp: $timestamp)]';
 }
