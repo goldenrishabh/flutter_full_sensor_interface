@@ -37,7 +37,7 @@ class MethodChannelSensors extends SensorsPlatform {
   Stream<UserAccelerometerEvent>? _userAccelerometerEvents;
   Stream<MagnetometerEvent>? _magnetometerEvents;
   Stream<BarometerEvent>? _barometerEvents;
-  Stream<GrotationvecEvent>? _barometerEvents;
+  Stream<GrotationvecEvent>? _grotationvecEvents;
 
   /// Returns a broadcast stream of events from the device accelerometer at the
   /// given sampling frequency.
@@ -215,6 +215,6 @@ class MethodChannelSensors extends SensorsPlatform {
             DateTime.fromMicrosecondsSinceEpoch(list[1]!.toInt()),
           );
         });
-    return _GrotationvecEvents!;
+    return _grotationvecEvents!;
   }
 }
