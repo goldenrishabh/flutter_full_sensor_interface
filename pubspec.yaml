@@ -1,8 +1,8 @@
-name: sensors_plus_platform_interface
+name: flutter_full_sensor_interface
 description: A common platform interface for the sensors_plus plugin.
 version: 2.0.0
 homepage: https://github.com/fluttercommunity/plus_plugins
-repository: https://github.com/fluttercommunity/plus_plugins/tree/main/packages/
+repository: https://github.com/goldenrishabh/flutter_full_sensor_interface.git
 
 dependencies:
   flutter:
