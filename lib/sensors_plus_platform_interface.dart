@@ -6,8 +6,9 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-import 'package:sensors_plus_platform_interface/src/method_channel_sensors.dart';
-import 'package:sensors_plus_platform_interface/src/sensor_interval.dart';
+import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_full_sensor_interface/src/sensor_interval.dart';
+import 'package:flutter_full_sensor_interface/src/method_channel_sensors.dart';
 
 import 'src/accelerometer_event.dart';
 import 'src/gyroscope_event.dart';

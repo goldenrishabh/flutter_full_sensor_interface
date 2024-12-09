@@ -6,7 +6,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
-import 'package:sensors_plus_platform_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
 
 /// A method channel -based implementation of the SensorsPlatform interface.
 class MethodChannelSensors extends SensorsPlatform {
