@@ -6,7 +6,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-import 'package:flutter_full_sensor_interface/sensors_plus_platform_interface.dart';
+import 'package:flutter_full_sensor_interface/flutter_full_sensor_interface.dart';
 import 'package:flutter_full_sensor_interface/src/sensor_interval.dart';
 import 'package:flutter_full_sensor_interface/src/method_channel_sensors.dart';
 
