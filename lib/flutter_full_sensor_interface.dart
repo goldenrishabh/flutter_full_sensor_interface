@@ -16,6 +16,7 @@ import 'src/magnetometer_event.dart';
 import 'src/user_accelerometer_event.dart';
 import 'src/barometer_event.dart';
 import 'src/grotationvec_event.dart';
+import 'src/rotationvec_event.dart';
 
 export 'src/accelerometer_event.dart';
 export 'src/gyroscope_event.dart';
@@ -24,6 +25,7 @@ export 'src/user_accelerometer_event.dart';
 export 'src/barometer_event.dart';
 export 'src/sensor_interval.dart';
 export 'src/grotationvec_event.dart';
+export 'src/rotationvec_event.dart';
 
 /// The common platform interface for sensors.
 abstract class SensorsPlatform extends PlatformInterface {
@@ -74,6 +76,18 @@ abstract class SensorsPlatform extends PlatformInterface {
     return magnetometerEventStream();
   }
 
+  @nonVirtual
+  @Deprecated('Use grotationvecEventStream() instead.')
+  Stream<GrotationvecEvent> get grotationvecEvents{
+    return grotationvecEventStream();
+  }
+
+  @nonVirtual
+  @Deprecated('Use rotationvecEventStream() instead.')
+  Stream<RotationvecEvent> get rotationvecEvents {
+    return rotationvecEventStream();
+  }
+
   /// Returns a broadcast stream of events from the device accelerometer at the
   /// given sampling frequency.
   Stream<AccelerometerEvent> accelerometerEventStream({
@@ -117,6 +131,12 @@ abstract class SensorsPlatform extends PlatformInterface {
   }
 
   Stream<GrotationvecEvent> grotationvecEventStream({
+    Duration samplingPeriod = SensorInterval.normalInterval,
+  }) {
+    throw UnimplementedError('GrotationvecEvents has not been implemented.');
+  }
+
+  Stream<RotationvecEvent> rotationvecEventStream({
     Duration samplingPeriod = SensorInterval.normalInterval,
   }) {
     throw UnimplementedError('GrotationvecEvents has not been implemented.');
